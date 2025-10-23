@@ -107,10 +107,14 @@
             font-weight: bold;
             margin-top: 10px;
             transition: background 0.3s;
+            margin-right: 15px;
+            margin-bottom: 10px;
         }
         
         .data-link:hover {
             background: #388E3C;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
         
         .goals {
@@ -125,6 +129,21 @@
             padding: 20px;
             border-radius: 8px;
             border-left: 4px solid #4CAF50;
+        }
+        
+        .links-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .link-item {
+            background: #E3F2FD;
+            padding: 15px;
+            border-radius: 8px;
+            flex: 1;
+            min-width: 200px;
         }
         
         footer {
@@ -146,6 +165,10 @@
             
             section {
                 padding: 20px;
+            }
+            
+            .links-container {
+                flex-direction: column;
             }
         }
     </style>
@@ -251,15 +274,25 @@
         <section id="results">
             <h2>数据收集结果</h2>
             <p>我们的访谈记录和调查数据已整理完成，请点击下方链接查看详细内容：</p>
-            <a href="#" class="data-link">查看访谈记录和调查数据</a>
-            <p><em>注：请将上述链接替换为您的实际数据文件链接</em></p>
+            
+            <div class="links-container">
+                <div class="link-item">
+                    <h3>访谈记录</h3>
+                    <p>包含4位潜在用户的完整访谈记录和分析</p>
+                    <a href="访谈记录和调查数据.pdf" class="data-link">查看访谈记录 (PDF)</a>
+                </div>
+                
+                <div class="link-item">
+                    <h3>调查数据</h3>
+                    <p>包含10+份问卷的原始数据和统计分析</p>
+                    <a href="调查数据.pdf" class="data-link">查看调查数据 (PDF)</a>
+                </div>
+            </div>
         </section>
     </div>
     
     <footer>
-        <div class="container">
-            <p>TechTrio团队 · 人机交互实验课作业4</p>
-        </div>
+        
     </footer>
 </body>
 </html>
