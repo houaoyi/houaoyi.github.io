@@ -3,28 +3,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>惜食 - 减少食物浪费</title>
+    <title>惜食 - 减少食物浪费的创新方案</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; }
-        .container { max-width: 800px; margin: 0 auto; }
-        h1 { color: #2c5f2d; }
-        h2 { color: #4CAF50; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            color: #2E7D32;
+            border-left: 5px solid #4CAF50;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        h3 {
+            color: #388E3C;
+            margin: 20px 0 10px;
+            font-size: 1.4rem;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+        
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .member {
+            background: #E8F5E9;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+        
+        .data-link {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        
+        .data-link:hover {
+            background: #388E3C;
+        }
+        
+        .goals {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .goal-card {
+            background: #E8F5E9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #4CAF50;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            color: #666;
+            border-top: 1px solid #eee;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            section {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>惜食</h1>
+            <p class="tagline">减少食物浪费的创新方案</p>
+        </div>
+    </header>
+    
     <div class="container">
-        <h1>惜食 - 减少食物浪费的创新方案</h1>
+        <section id="team">
+            <h2>团队介绍</h2>
+            <p>我们的团队，由四名对人机交互和可持续发展充满热情的学生组成。我们的专业背景涵盖计算机科学、用户体验设计和环境研究。我们共同致力于通过技术解决方案解决现实世界中的问题，特别是关注如何减少食物浪费这一全球性挑战。</p>
+            
+            <h3>团队成员：</h3>
+            <div class="team-members">
+                <div class="member">郭明昊</div>
+                <div class="member">康海洋</div>
+                <div class="member">侯傲毅</div>
+                <div class="member">刘明康</div>
+            </div>
+        </section>
         
-        <h2>团队介绍</h2>
-        <p>我们是TechTrio团队，由三名对人机交互和可持续发展充满热情的学生组成...</p>
+        <section id="project">
+            <h2>项目方案</h2>
+            <p>我们的项目"惜食"旨在通过移动应用平台，以极低的价格销售餐厅当日未售出的余量食物，从而减少食物浪费，同时为消费者提供实惠的餐饮选择。</p>
+            
+            <h3>核心理念：</h3>
+            <p>连接有余量食物的餐厅与寻求实惠、环保消费方式的消费者，创造双赢解决方案。</p>
+            
+            <h3>目标：</h3>
+            <div class="goals">
+                <div class="goal-card">
+                    <p>减少餐饮行业的食物浪费</p>
+                </div>
+                <div class="goal-card">
+                    <p>为消费者提供高性价比的食品选择</p>
+                </div>
+                <div class="goal-card">
+                    <p>提高公众对食物浪费问题的认识</p>
+                </div>
+                <div class="goal-card">
+                    <p>建立可持续的食物分配新模式</p>
+                </div>
+            </div>
+        </section>
         
-        <h2>项目提案</h2>
-        <p>我们的项目"惜食"旨在通过移动应用平台，以极低的价格销售餐厅当日未售出的余量食物...</p>
+        <section id="data-collection">
+            <h2>数据收集计划</h2>
+            
+            <h3>访谈设计</h3>
+            <p>我们进行了半结构化访谈，重点关注三个主题：</p>
+            
+            <h4>访谈结构：</h4>
+            <ol>
+                <li>介绍与知情同意</li>
+                <li>热身问题：了解受访者的餐饮习惯</li>
+                <li>主体问题：
+                    <ul>
+                        <li>对食物浪费的态度与消费习惯</li>
+                        <li>对"余量食物"产品的感知与风险考量</li>
+                        <li>对应用功能与使用的期望</li>
+                    </ul>
+                </li>
+                <li>结束与致谢</li>
+            </ol>
+            
+            <p><strong>受访者筛选：</strong>4位潜在用户，重点关注18-40岁有外出就餐习惯的人群。</p>
+            
+            <h3>问卷调查设计</h3>
+            <p>我们设计了结构化问卷，包含四个部分：</p>
+            
+            <h4>问卷结构：</h4>
+            <ol>
+                <li>人口统计与基本习惯：了解用户背景和餐饮习惯</li>
+                <li>对概念的接受度与顾虑：评估对余量食物购买的态度</li>
+                <li>对应用功能的偏好：收集对应用功能的具体需求</li>
+                <li>开放题：获取补充建议和反馈</li>
+            </ol>
+            
+            <p><strong>样本量目标：</strong>收集10+份有效问卷，确保数据代表性。</p>
+            
+            <h3>数据收集方法</h3>
+            <ul>
+                <li><strong>访谈：</strong>面对面或在线进行，录音并转写为文字稿</li>
+                <li><strong>问卷：</strong>通过线上平台分发，确保匿名性和数据安全</li>
+                <li><strong>数据分析：</strong>采用定性分析（访谈）和定量分析（问卷）相结合的方法</li>
+            </ul>
+            
+            <h3>预期成果</h3>
+            <p>通过收集的数据，我们将：</p>
+            <ul>
+                <li>深入了解目标用户对余量食物购买的态度和顾虑</li>
+                <li>识别最关键的应用功能和信息需求</li>
+                <li>为应用设计提供实证基础，优化用户体验</li>
+                <li>验证项目假设，指导后续开发方向</li>
+            </ul>
+        </section>
         
-        <h2>数据收集计划</h2>
-        <p>我们进行了半结构化访谈和问卷调查来收集用户需求...</p>
-        
-        <p><a href="[这里放入您的PDF报告链接]">查看完整研究报告</a></p>
+        <section id="results">
+            <h2>数据收集结果</h2>
+            <p>我们的访谈记录和调查数据已整理完成，请点击下方链接查看详细内容：</p>
+            <a href="#" class="data-link">查看访谈记录和调查数据</a>
+            <p><em>注：请将上述链接替换为您的实际数据文件链接</em></p>
+        </section>
     </div>
+    
+    <footer>
+        <div class="container">
+            <p>TechTrio团队 · 人机交互实验课作业4</p>
+        </div>
+    </footer>
 </body>
 </html>
